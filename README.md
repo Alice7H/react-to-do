@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <img alt="Banner" title="Banner" src="public/images/banner.png" />
+</h1>
 
-## Available Scripts
+# REACT TO DO
 
-In the project directory, you can run:
+O projeto React to do é uma lista de tarefas que podem ser excluídas, filtradas e marcadas como tarefas completadas.
 
-### `npm start`
+O botão de excluir tarefas, representada pelo ícone de lixo, remove os itens da lista mas mantém o item de objeto de armazenamento local.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esta aplicação salva, adiciona, recupera ou exclui dados localmente em um navegador Web através do localStorage, o botão 'Reset List' remove o item do localStorage e limpa a lista.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Obs: Em inglês `uncompleted` se traduz como algo que precisa ser feito, está em andamento ou que está para terminar.
 
-### `npm test`
+<p align="center">
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#pré-requisitos">Pré-requisitos</a> •
+ <a href="#rodando-o-react-to-do">Rodando o React to do</a>
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias
 
-### `npm run build`
+As seguintes ferramentas/bibliotecas foram usadas na construção do projeto:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/)
+- um editor de código, como o [VSCode](https://code.visualstudio.com/)
 
-### `npm run eject`
+## Rodando o React to do
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone este repositório
+$ git clone <https://github.com/Alice7H/react-to-do.git>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no terminal/cmd
+$ cd react-to-do
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instale as dependências
+$ npm install
+#ou
+$ yarn install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação em modo de desenvolvimento
+$ npm start
+#ou
+$ yarn start
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# O projeto inciará na porta:3000 - acesse <http://localhost:3000>
+```

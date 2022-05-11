@@ -9,6 +9,11 @@ export default function App() {
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
 
+  const clearTasks = () =>{
+    localStorage.removeItem('todos');
+    setTodos([]);
+  }
+
   // run once = when the app start
   useEffect(() => {
     const getLocalTodos = () => {
@@ -62,6 +67,12 @@ export default function App() {
         setTodos={setTodos} 
         filteredTodos={filteredTodos}
       />
+      <button type="button" 
+        className="reset-button"
+        onClick={clearTasks}
+      >
+        Reset List
+      </button> 
     </div>
   );
 }

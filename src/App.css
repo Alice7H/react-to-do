@@ -133,3 +133,19 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
+
+.reset-button {
+  color: #ff6f47;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.reset-button:hover {
+  color: #ffffff;
+  background: #ff6f47;
+}
