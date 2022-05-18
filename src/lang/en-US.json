@@ -1,0 +1,5 @@
+{
+  "title": "To Do List",
+  "selectValues": ["all", "completed", "uncompleted"],
+  "resetButton": "Reset List"
+}

@@ -10,6 +10,9 @@ O botão de excluir tarefas, representada pelo ícone de lixo, remove os itens d
 
 Esta aplicação salva, adiciona, recupera ou exclui dados localmente em um navegador Web através do localStorage, o botão 'Reset List' remove o item do localStorage e limpa a lista.
 
+A aplicação também usa a biblioteca`react-intl`, com as línguas portuguesa e inglesa.
+A detecção de linguagem é definida de acordo com as configurações do navegador e por padrão é utilizada a língua portuguesa.
+
 Obs: Em inglês `uncompleted` se traduz como algo que precisa ser feito, está em andamento ou que está para terminar.
 
 <p align="center">
@@ -24,6 +27,7 @@ As seguintes ferramentas/bibliotecas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
+- [React Intl](https://formatjs.io/docs/react-intl)
 
 ## Pré-requisitos
 
