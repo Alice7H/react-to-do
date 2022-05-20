@@ -34,9 +34,13 @@ form button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-form button:hover {
+form button:hover,
+form button:focus {
   background: #ff6f47;
   color: white;
+}
+form label {
+  display: none;
 }
 .todo-container {
   display: flex;
@@ -145,7 +149,8 @@ select {
   right: 2rem;
 }
 
-.reset-button:hover {
+.reset-button:hover,
+.reset-button:focus {
   color: #ffffff;
   background: #ff6f47;
 }

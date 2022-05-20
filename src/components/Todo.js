@@ -20,15 +20,15 @@ export default function Todo({ todos, setTodos, todo }) {
   };
 
   return (
-    <div className="todo">
+    <div className="todo" data-testid="toDoListItem">
       <li className={`todo-item ${todo.completed ? "completed" : ""}`}>
         {todo.text}
       </li>
-      <button className="complete-btn" onClick={completeHandler}>
-        <i className="fas fa-check" aria-label="Check" />
+      <button className="complete-btn" onClick={completeHandler} aria-label="Check" >
+        <i className="fas fa-check"/>
       </button>
-      <button className="trash-btn" onClick={deleteHandler}>
-        <i className="fas fa-trash" aria-label="Remove" />
+      <button className="trash-btn" onClick={deleteHandler} aria-label="Remove">
+        <i className="fas fa-trash"/>
       </button>
     </div>
   );

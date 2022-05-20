@@ -1,5 +1,7 @@
 {
   "title": "To Do List",
+  "inputPlaceholder": "Task 1",
   "selectValues": ["all", "completed", "uncompleted"],
-  "resetButton": "Reset List"
+  "resetButton": "Reset List",
+  "emptyList": "You don't have nothing in to do list" 
 }

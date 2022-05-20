@@ -1,5 +1,7 @@
 {
   "title": "Lista de Afazeres",
+  "inputPlaceholder": "Tarefa 1",
   "selectValues": ["todos", "completos", "incompletos"],
-  "resetButton": "Redefinir Lista"
+  "resetButton": "Redefinir Lista",
+  "emptyList": "Você não possui afazeres na lista"
 }

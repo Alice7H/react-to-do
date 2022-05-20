@@ -10,6 +10,7 @@ export default function Form({
 }) {
   const intl = useIntl();
   const itemsIntl = intl.messages["selectValues"];
+  const placeholderInlt = intl.messages["inputPlaceholder"];
   const options = ["all", "completed", "uncompleted"];
 
   const inputTextHandler = (e) => {
@@ -18,11 +19,13 @@ export default function Form({
 
   const submittodoHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
-      { text: inputText, completed: false, id: Math.random() * 1000 },
-    ]);
-    setInputText("");
+    if(inputText){
+      setTodos([
+        ...todos,
+        { text: inputText, completed: false, id: Math.random() * 1000 },
+      ]);
+      setInputText("");
+    }
   };
 
   const statusHandler = (e) => {
@@ -31,19 +34,23 @@ export default function Form({
 
   return (
     <form>
+      <label htmlFor="toDoInput">{placeholderInlt}</label>
       <input
+        data-testid="toDoInput"
+        id="toDoInput"
         type="text"
+        placeholder={placeholderInlt}
         className="todo-list"
         onChange={inputTextHandler}
         value={inputText}
       />
-      <button className="todo-button" type="submit" onClick={submittodoHandler}>
-        <i className="fas fa-plus-square" aria-label="Save"></i>
+      <button className="todo-button" type="submit" onClick={submittodoHandler} aria-label="Save">
+        <i className="fas fa-plus-square"/>
       </button>
       <div className="select">
-        <select name="todos" className="filter-todo" onChange={statusHandler}>
+        <select name="todos" data-testid="selectFilter" className="filter-todo" onChange={statusHandler}>
           {options.map((option, index) => (
-            <option key={index} value={option}>
+            <option key={index} value={option} data-testid="selectFilter-option">
               {itemsIntl[index]}
             </option>
           ))}
